@@ -37,6 +37,7 @@
             agendamentoToolStripMenuItem = new ToolStripMenuItem();
             buscaToolStripMenuItem = new ToolStripMenuItem();
             cancelamentoToolStripMenuItem = new ToolStripMenuItem();
+            pnlPaginaInicial = new Panel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             tutorToolStripMenuItem.Name = "tutorToolStripMenuItem";
             tutorToolStripMenuItem.Size = new Size(180, 22);
             tutorToolStripMenuItem.Text = "Tutor";
+            tutorToolStripMenuItem.Click += tutorToolStripMenuItem_Click;
             // 
             // animalToolStripMenuItem
             // 
@@ -99,12 +101,20 @@
             cancelamentoToolStripMenuItem.Size = new Size(151, 22);
             cancelamentoToolStripMenuItem.Text = "Cancelamento";
             // 
+            // pnlPaginaInicial
+            // 
+            pnlPaginaInicial.Location = new Point(12, 32);
+            pnlPaginaInicial.Name = "pnlPaginaInicial";
+            pnlPaginaInicial.Size = new Size(776, 411);
+            pnlPaginaInicial.TabIndex = 1;
+            // 
             // FrmPaginaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
             ClientSize = new Size(800, 450);
+            Controls.Add(pnlPaginaInicial);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "FrmPaginaInicial";
@@ -126,5 +136,6 @@
         private ToolStripMenuItem agendamentoToolStripMenuItem;
         private ToolStripMenuItem buscaToolStripMenuItem;
         private ToolStripMenuItem cancelamentoToolStripMenuItem;
+        private Panel pnlPaginaInicial;
     }
 }

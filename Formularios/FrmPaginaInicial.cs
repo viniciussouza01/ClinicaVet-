@@ -15,5 +15,9 @@ namespace ClinicaVeterinariaForms
             InitializeComponent();
         }
 
+        private void tutorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
